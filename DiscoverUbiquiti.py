@@ -39,7 +39,7 @@ class bcolors:
 
 def ping_sweep(network):
 	print
-	print "Ping sweep in progress..."
+	print ("Ping sweep in progress...")
 	nmap = subprocess.check_output("nmap -n -sP --send-ip %s" % network, shell=True)
 
 	nsplit = []
@@ -51,7 +51,7 @@ def ping_sweep(network):
 def print_ubnt():
 
 	print
-	print "Ubiquiti Devices\n"
+	print ("Ubiquiti Devices\n")
 
 	arp = subprocess.check_output("arp -a", shell=True)
 
